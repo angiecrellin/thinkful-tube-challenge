@@ -34,9 +34,11 @@ function getRequest(searchTerm) {
 function showResults(results) {
     var html = "";
     $.each(results, function(index, value) {
+        
+        html += '<h2>' + value.snippet.title + '</h2>';
+        html += '<a href= https://www.youtube.com/watch?v=' + value.id.videoId + '>'
         html += '<img src = "' + value.snippet.thumbnails.default.url + '" />';
-        html += '<p>' + value.snippet.title + '</p>';
-        html += '<a href=>'
+        html += '</a>'
         console.log(value.snippet.title);
 
 
