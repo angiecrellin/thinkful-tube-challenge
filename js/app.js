@@ -36,6 +36,7 @@ function showResults(results) {
     $.each(results, function(index, value) {
         html += '<img src = "' + value.snippet.thumbnails.default.url + '" />';
         html += '<p>' + value.snippet.title + '</p>';
+        html += '<a href=>'
         console.log(value.snippet.title);
 
 
